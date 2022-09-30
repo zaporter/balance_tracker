@@ -1,0 +1,40 @@
+[package]
+name = "balance_tracker_frontend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+strum = "0.24"
+strum_macros = "0.24"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+reqwest = {version = "0.11", features = ["json"] }
+chrono = {version = "0.4.22", features = ["serde"] }
+futures = "0.3.21"
+log = "0.4.6"
+wasm-logger = "0.2.0"
+yew = { git = "https://github.com/yewstack/yew/", features = ["tokio","csr"] }
+yew-router = { git = "https://github.com/yewstack/yew.git" }
+gloo = "0.8"
+wasm-bindgen-futures= "0.4"
+getrandom = {version = "0.2", features = ["js"]}
+wasm-bindgen="0.2"
+itertools = "0.10"
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+	"HtmlInputElement",
+    "Element",
+    "HtmlElement",
+]
+
+
+
+[dependencies.uuid]
+version = "1.1.2"
+features = [
+    "v4",                # Lets you generate random UUIDs
+]

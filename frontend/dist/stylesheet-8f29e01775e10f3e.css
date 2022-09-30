@@ -1,0 +1,180 @@
+h1 {
+  font-family: Arial, Verdana, Tahoma;
+  color: #161B33;
+}
+h2 {
+  font-family: Arial, Verdana, Tahoma;
+  color: #161B33;
+}
+h3 {
+  font-family: Arial, Verdana, Tahoma;
+  color: #161B33;
+}
+@font-face {
+    font-family: "Arial";
+    src: url(static/arial.ttf) format("truetype");
+}
+p {
+  font-family: Arial, Verdana, Tahoma;
+  color: #161B33;
+}
+body {
+    background-color: #EAEAEA;
+}
+.centered {
+  text-align: center;
+}
+.sheetname {
+  width:100%;
+  display:inline-block;
+}
+.sheetname .invisible{
+text-align: left;
+}
+.sheetname .text{
+  text-align: center;
+}
+.sheetname .fork{
+  text-align: right;
+  position:absolute;
+}
+.home_page input {
+  font-size:20px;
+  height: 33px;
+}
+.home_page_button_area {
+  text-align: center;
+}
+.hbox {
+  display: flex;
+  flex-direction: row;
+}
+.page_holder h1 {
+  text-align: center;
+}
+.vline {
+  height: 100%;
+  flex: 0;
+  border:1px solid red;
+  width: 1px;
+  background-color: red;
+}
+.home_page_hbox_side {
+  width: calc(50% - 1px);
+}
+button {
+  background-color: #5386E4;
+  color: #FCFCFF;
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+
+
+.home_page {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.flex {
+   display:flex;
+}
+.flexjustify {
+   display:flex;
+   justify-content: space-between;
+}
+.personcomponentflex{
+   display:flex;
+   justify-content: space-between;
+
+}
+.rightalign {
+  text-align:right;
+}
+.lineitem {
+   display:flex;
+  justify-content:space-between;
+
+}
+.lineiteminside {
+  display:inline-flex;
+  align-items:center;
+  justify-content: space-between;
+  width:300px;
+  vertical-align:middle;
+}
+.breakdown ul {
+
+}
+.redbutton {
+  background-color:red;
+}
+.smallbutton {
+  padding: 2px 32px;
+}
+.rightjustify {
+}
+
+.transaction {
+  background-color: #EAEAEA;
+  border-radius:10px;
+  padding:10px;
+  margin:10px;
+}
+.personcomp {
+  border-radius:10px;
+  margin:5px;
+}
+.personcomp button {
+  background-color: red;
+}
+
+.view_page {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+.home_page ol {
+  text-align: left;
+}
+
+.home_page ul {
+  text-align: left;
+}
+
+.modal {
+  position:fixed;
+  z-index:1;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
