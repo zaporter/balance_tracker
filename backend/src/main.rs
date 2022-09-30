@@ -196,7 +196,7 @@ async fn main() -> std::io::Result<()> {
             let generated = generate();
             App::new().service(ResourceFiles::new("/", generated))
         })
-        .bind("127.0.0.1:8080")?
+        .bind("127.0.0.1:8042")?
         .workers(1)
         .run()
         .await
@@ -214,7 +214,7 @@ async fn main() -> std::io::Result<()> {
             .service(web::resource("/forksheet").route(web::post().to(fork_sheet)))
     })
     .workers(1)
-    .bind(("127.0.0.1", 7525))?
+    .bind(("127.0.0.1", 7535))?
     .run();
     futures::future::join(frontend,backend).await.0.unwrap()
     // frontend.await;
