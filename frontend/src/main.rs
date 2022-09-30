@@ -37,7 +37,7 @@ use fork_sheet_redirect::*;
 
 async fn perfom_server_request<T: Serialize, K: serde::de::DeserializeOwned + std::fmt::Debug>(payload: T, request_type:&str) -> Result<K,String>{
     let client = reqwest::Client::new();
-    let mut url = "http://127.0.0.1:7525/".to_owned();
+    let mut url = "https://balancesheetbackend.latticeanimal.com/".to_owned();
     url.push_str(request_type);
     let response_unfinished = client.post(&url)
             .json(&payload)
